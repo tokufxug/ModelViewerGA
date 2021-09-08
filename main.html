@@ -8,10 +8,18 @@
     document.documentElement.classList.remove('no-js');
     document.documentElement.classList.add('js');
   </script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WK9MV97HE4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WK9MV97HE4');
+  </script>
 </head>
 <body>
- <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
- <div id="ar-view">
+  <div id="ar-view">
 	<model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" 
 	    alt="A 3D model of an astronaut" 
 	    ar ar-modes="webxr scene-viewer quick-look" 
