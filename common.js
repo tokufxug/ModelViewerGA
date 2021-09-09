@@ -1,4 +1,4 @@
-console.log('locationar-common.js');
+console.log('common.js');
 function isAccess2AR(){
     const url = location.protocol + "\/\/" + location.host + location.pathname;
     const check_url = url.replace(url.split('/').pop(), '');

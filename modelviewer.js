@@ -1,4 +1,4 @@
-console.log('locationar-modelviewer.js');
+console.log('modelviewer.js');
 function loadFinished(){
     const ar_view = "ar-view";
     const not_access = "not-access";
