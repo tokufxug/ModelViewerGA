@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="ja" class="no-js">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <meta name="application-name" content="LocationAR">
   <meta name="robots" content="noindex" />
-  <title></title>
-  <script type="module">
-    document.documentElement.classList.remove('no-js');
-    document.documentElement.classList.add('js');
-  </script>
+  <meta name="robots" content="nofollow">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta http-equiv="Expires" content="Thu, 01 Dec 1994 16:00:00 GMT">
+  <link rel="stylesheet" type="text/css" href="modelviewer.css">
+  <title>LocationAR Model Viewer Template</title>
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script> 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WK9MV97HE4"></script>
@@ -20,12 +22,14 @@
 	  現地にてご体験ください。
   </div>
   <div id="ar-view" style="display:none">
-    <model-viewer src="a.glb" 
-        alt="" 
+    <model-viewer src="abc.glb" 
         ar ar-modes="quick-look scene-viewer webxr" 
-        exposure="2" shadow-intensity="10" shadow-softness="1"
-        environment-image="neutral" 
-        auto-rotate camera-controls>
+        exposure="2" 
+        shadow-intensity="10" 
+        shadow-softness="1"
+        environment-image="neutral"
+        autoplay 
+        camera-controls>
     </model-viewer>
   <div>
 </body>
