@@ -5,7 +5,7 @@ class ARModelViewer {
        const ar_view = "ar-view";
        const not_access = "not-access";
        let display_id = "";
-       if (LocationARCommon.isAccess2AR())
+       if (ARCommon.isAccess2AR())
        {
            display_id = ar_view;
        }
